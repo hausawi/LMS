@@ -5,7 +5,7 @@ import Announcements from '../../../components/Announcements';
 import { Link } from 'react-router-dom';
 import Performance from '../../../components/Performance';
 
-const SinglePage = () => {
+const StudentSinglePage = () => {
 	return (
 		<div className='flex-1 p-4 flex flex-col gap-4 xl:flex-row'>
 			{/* LEFT */}
@@ -16,7 +16,7 @@ const SinglePage = () => {
 					<div className='bg-hmoLightBlue py-6 px-4 rounded-md flex-1 flex gap-4'>
 						<div className='w-1/3'>
 							<img
-								src='https://lh3.googleusercontent.com/a/ACg8ocJuIv52Onetb2GAOy17ZH9oFSpG4XRCx1k3TK7TGGxdtqJsrVY=s360-c-no'
+								src='https://www.uwindsor.ca/supportuwindsor/sites/uwindsor.ca.supportuwindsor/files/styles/full/public/impact_story_image_new.jpg?itok=r8ng6XEP'
 								alt=''
 								width={144}
 								height={144}
@@ -24,7 +24,7 @@ const SinglePage = () => {
 							/>
 						</div>
 						<div className='w-2/3 flex flex-col justify-between gap-4'>
-							<h1 className='text-xl font-semibold '>Haider Moubarak</h1>
+							<h1 className='text-xl font-semibold '>Tijani Hausawi</h1>
 							<p className='text-sm text-gray-500'>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							</p>
@@ -51,7 +51,7 @@ const SinglePage = () => {
 					{/* SMALL CARDS */}
 					<div className='flex-1 flex gap-4 justify-between flex-wrap'>
 						{/* CARD */}
-						<div className='bg-white p-4 rounded-md flex gap-4 w-full md:w-[48%] lg:w-[42%] xl:w-[42%] 2xl:w-full'>
+						<div className='bg-white p-4 rounded-md flex gap-4 w-full md:w-[48%] lg:w-[42%] xl:w-[42%] 2xl:w-[46%]'>
 							<img
 								src='/singleAttendance.png'
 								alt=''
@@ -65,7 +65,7 @@ const SinglePage = () => {
 							</div>
 						</div>
 						{/* CARD */}
-						<div className='bg-white p-4 rounded-md flex gap-4 w-full md:w-[48%] lg:w-[42%] xl:w-[42%] 2xl:w-full'>
+						<div className='bg-white p-4 rounded-md flex gap-4 w-full md:w-[48%] lg:w-[42%] xl:w-[42%] 2xl:w-[46%]'>
 							<img
 								src='/singleClass.png'
 								alt=''
@@ -74,12 +74,12 @@ const SinglePage = () => {
 								className='w-6 h-6'
 							/>
 							<div>
-								<h1 className='text-xl font-semibold'>6</h1>
-								<span className='text-sm text-gray-400'>Classes</span>
+								<h1 className='text-xl font-semibold'>6A</h1>
+								<span className='text-sm text-gray-400'>Class</span>
 							</div>
 						</div>
 						{/* CARD */}
-						<div className='bg-white p-4 rounded-md flex gap-4 w-full md:w-[48%]   lg:w-[42%] xl:w-[42%] 2xl:w-full'>
+						<div className='bg-white p-4 rounded-md flex gap-4 w-full md:w-[48%]   lg:w-[42%] xl:w-[42%] 2xl:w-[46%]'>
 							<img
 								src='/singleBranch.png'
 								alt=''
@@ -88,12 +88,12 @@ const SinglePage = () => {
 								className='w-6 h-6'
 							/>
 							<div>
-								<h1 className='text-xl font-semibold'>3</h1>
-								<span className='text-sm text-gray-400'>Branches</span>
+								<h1 className='text-xl font-semibold'>6</h1>
+								<span className='text-sm text-gray-400'>Grade</span>
 							</div>
 						</div>
 						{/* CARD */}
-						<div className='bg-white p-4 rounded-md flex gap-4 w-full md:w-[48%] lg:w-[42%] xl:w-[42%] 2xl:w-full'>
+						<div className='bg-white p-4 rounded-md flex gap-4 w-full md:w-[48%] lg:w-[42%] xl:w-[42%] 2xl:w-[46%]'>
 							<img
 								src='/singleLesson.png'
 								alt=''
@@ -118,19 +118,19 @@ const SinglePage = () => {
 					<h1 className='text-xl font-semibold'>ShortCuts</h1>
 					<div className='mt-4 flex gap-2 flex-wrap text-xs text-gray-500'>
 						<Link className='p-3 rounded-md bg-hmoGreen' href='/'>
-							Teacher&apos;s Classes
+							Student&apos;s Lessons
 						</Link>
 						<Link className='p-3 rounded-md bg-hmoLightBlue' href='/'>
-							Teacher&apos;s Students
+							Student&apos;s Teachers
 						</Link>
 						<Link className='p-3 rounded-md bg-hmoLightPurple' href='/'>
-							Teacher&apos;s Lessons
+							Student&apos;s Results
 						</Link>
 						<Link className='p-3 rounded-md bg-hmoLightGreen' href='/'>
-							Teacher&apos;s Exams
+							Student&apos;s Exams
 						</Link>
 						<Link className='p-3 rounded-md bg-yellow-200' href='/'>
-							Teacher&apos;s Assignments
+							Student&apos;s Assignments
 						</Link>
 					</div>
 				</div>
@@ -141,4 +141,4 @@ const SinglePage = () => {
 	);
 };
 
-export default SinglePage;
+export default StudentSinglePage;

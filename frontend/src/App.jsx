@@ -18,6 +18,7 @@ import TeacherPage from './app/dashboard/teachers/TeacherPage';
 import ParentPage from './app/dashboard/parents/ParentPage';
 import StudentPage from './app/dashboard/students/StudentPage';
 import SinglePage from './app/dashboard/teachers/SinglePage';
+import StudentSinglePage from './app/dashboard/students/StudentSinglePage';
 
 function App() {
 	return (
@@ -53,7 +54,8 @@ function App() {
 						<Route path='/list/events' element={<EventsList />} />
 						<Route path='/list/announcements' element={<AnnouncementsList />} />
 						{/* SIGNLE PAGES */}
-						<Route path='/teachers/single-page' element={<SinglePage />} />
+						<Route path='/list/teachers/:id' element={<SinglePage />} />
+						<Route path='/list/students/:id' element={<StudentSinglePage />} />
 					</Routes>
 				</div>
 			</div>

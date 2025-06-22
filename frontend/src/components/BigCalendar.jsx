@@ -1,21 +1,21 @@
 import { Calendar, momentLocalizer, Views } from 'react-big-calendar';
 import moment from 'moment';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
-import { useContext, useState } from 'react';
+import {   useState } from 'react';
 import { ListContext } from '../ListContext';
+import { calendarEvents } from '../lib/data';
 
 const localizer = momentLocalizer(moment);
 
 const BigCalendar = () => {
-	
-		const { calendarEvents } = useContext(ListContext);
-    const [view, setView] = useState  (Views.WORK_WEEK)
-    
-    const handleOnChangeView = (selectedView) => {
-        setView(selectedView);
-    }
-    return (
-			<div>
+	const [view, setView] = useState(Views.WORK_WEEK);
+
+
+	const handleOnChangeView = (selectedView) => {
+		setView(selectedView);
+	};
+	return (
+		<div>
 				<Calendar
 					localizer={localizer}
 					events={calendarEvents}
@@ -28,8 +28,8 @@ const BigCalendar = () => {
 					min={new Date(2025, 1, 0, 8, 0, 0)}
 					max={new Date(2025, 1, 0, 19, 0, 0)}
 				/>
-			</div>
-		);
+		</div>
+	);
 };
 
 export default BigCalendar;
