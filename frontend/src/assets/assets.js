@@ -13,6 +13,7 @@ import edit from './edit.png';
 import mail from './mail.png';
 import phone from './phone.png';
 import blood from './blood.png';
+import close from './close.png';
 
 
 export const assets = {
@@ -31,22 +32,6 @@ export const assets = {
 	mail,
 	phone,
 	blood,
-	// subject,
-	// profile,
-	// lang,
-	// cart,
-	// menu,
-	// dropdown,
-	// support,
-	// exchange,
-	// quality,
-	// cross,
-	// star,
-	// star_dull,
-	// bin,
-	// stripe,
-	// paypal,
-	// contact,
-	// about,
-	// plus,
+	close,
+	
 };

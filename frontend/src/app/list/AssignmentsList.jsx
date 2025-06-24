@@ -7,6 +7,9 @@ import { role, assignmentsData } from '../../lib/data';
 
 import React, { useContext, useEffect, useState } from 'react';
 import { ListContext } from '../../ListContext';
+import UpdateFormModel from '../../components/UpdateFormModel';
+import DeleteFormModel from '../../components/DeleteFormModel';
+import CreateFormModel from '../../components/CreateFormModel';
 
 export const columns = [
 	{
@@ -59,11 +62,7 @@ const AssignmentsList = () => {
 							<button className='w-8 h-8 flex items-center justify-center rounded-full bg-hmoGreen'>
 								<img src={assets.sort} width={14} height={14} alt='' />
 							</button>
-							{role == 'admin' && (
-								<button className='w-8 h-8 flex items-center justify-center rounded-full bg-hmoGreen'>
-									<img src={assets.plus} width={14} height={14} alt='' />
-								</button>
-							)}
+							{role === 'admin' && <CreateFormModel createType='plus' />}
 						</div>
 					</div>
 				</div>
@@ -81,15 +80,14 @@ const AssignmentsList = () => {
 								<td className='hidden md:table-cell'>{item.dueDate}</td>
 								<td>
 									<div className='flex items-center gap-2'>
-										<Link href={`/list/teachers/${item.id}`}>
-											<button className='w-7 h-7 flex items-center justify-center rounded-full bg-hmoLightBlue'>
-												<img src={assets.edit} alt='' width={16} height={16} />
-											</button>
-										</Link>
 										{role === 'admin' && (
-											<button className='w-7 h-7 flex items-center justify-center rounded-full bg-hmoLightBlue'>
-												<img src='/delete.png' alt='' width={16} height={16} />
-											</button>
+											<>
+												<Link href={`/list/teachers/${item.id}`}>
+													<UpdateFormModel editType='edit' data={item} />
+												</Link>
+
+												<DeleteFormModel deleteType='delete' id={item.id} />
+											</>
 										)}
 									</div>
 								</td>

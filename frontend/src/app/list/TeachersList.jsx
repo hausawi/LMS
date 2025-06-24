@@ -7,6 +7,8 @@ import { role, teachersData } from '../../lib/data';
 
 import React, { useContext, useEffect, useState } from 'react';
 import { ListContext } from '../../ListContext';
+import CreateFormModel from '../../components/CreateFormModel';
+import DeleteFormModel from '../../components/DeleteFormModel';
 
 export const columns = [
 	{
@@ -45,12 +47,13 @@ export const columns = [
 ];
 
 const TeachersList = () => {
-	const { teachersData } = useContext(ListContext);
+	const { teachersData,  createType} = useContext(ListContext);
 	const [listItem, setListItem] = useState([]);
 	useEffect(() => {
 		setListItem(teachersData.slice());
-		console.log(teachersData);
 	}, []);
+
+	console.log(teachersData)
 	return (
 		<>
 			<div className='bg-white p-4 rounded-md flex-1 m-4 mt-0'>
@@ -69,10 +72,12 @@ const TeachersList = () => {
 								<img src={assets.sort} width={14} height={14} alt='' />
 							</button>
 							{role == 'admin' && (
-								<button className='w-8 h-8 flex items-center justify-center rounded-full bg-hmoGreen'>
-									<img src={assets.plus} width={14} height={14} alt='' />
-								</button>
+								<CreateFormModel  createType='plus' />
+								// <button className='w-8 h-8 flex items-center justify-center rounded-full bg-hmoGreen'>
+								// 	<img src={assets.plus} width={14} height={14} alt='' />
+								// </button>
 							)}
+							{console.log(createType)}
 						</div>
 					</div>
 				</div>
@@ -114,9 +119,10 @@ const TeachersList = () => {
 											</button>
 										</Link>
 										{role === 'admin' && (
-											<button className='w-7 h-7 flex items-center justify-center rounded-full bg-hmoLightBlue'>
-												<img src='/delete.png' alt='' width={16} height={16} />
-											</button>
+											<DeleteFormModel  deleteType='delete' id={item.id} />
+											// <button className='w-7 h-7 flex items-center justify-center rounded-full bg-hmoLightBlue'>
+											// 	<img src='/delete.png' alt='' width={16} height={16} />
+											// </button>
 										)}
 									</div>
 								</td>
