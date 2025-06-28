@@ -1,9 +1,9 @@
 import React from 'react';
 import { assets } from '../../../assets/assets';
-import BigCalendar from '../../../components/BigCalendar';
-import Announcements from '../../../components/Announcements';
+import BigCalendar from '../../../components/dashboard/BigCalendar';
+import Announcements from '../../../components/dashboard/Announcements';
 import { Link } from 'react-router-dom';
-import Performance from '../../../components/Performance';
+import Performance from '../../../components/dashboard/Performance';
 
 const SinglePage = () => {
 	return (

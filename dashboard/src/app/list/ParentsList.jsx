@@ -1,15 +1,15 @@
-import { Link } from 'react-router-dom';
-import TableSearch from '../../components/TableSearch';
+import { Link, Outlet } from 'react-router-dom';
+import TableSearch from '../../components/dashboard/TableSearch';
 import { assets } from '../../assets/assets';
-import Pagination from '../../components/Pagination';
-import Table from '../../components/Table';
+import Pagination from '../../components/dashboard/Pagination';
+import Table from '../../components/dashboard/Table';
 import { role, parentsData } from '../../lib/data';
 
 import React, { useContext, useEffect, useState } from 'react';
 import { ListContext } from '../../ListContext';
-import CreateFormModel from '../../components/CreateFormModel';
-import DeleteFormModel from '../../components/DeleteFormModel';
-import UpdateFormModel from '../../components/UpdateFormModel';
+import CreateFormModel from '../../components/dashboard/CreateFormModel';
+import DeleteFormModel from '../../components/dashboard/DeleteFormModel';
+import UpdateFormModel from '../../components/dashboard/UpdateFormModel';
 
 export const columns = [
 	{
@@ -42,7 +42,6 @@ const ParentsList = () => {
 	const [listItem, setListItem] = useState([]);
 	useEffect(() => {
 		setListItem(parentsData.slice());
-		console.log(parentsData);
 	}, []);
 	return (
 		<>
@@ -60,12 +59,13 @@ const ParentsList = () => {
 								<img src={assets.sort} width={14} height={14} alt='' />
 							</button>
 
-							{role === 'admin' && <CreateFormModel  createType='plus' />}
+							{role === 'admin' && <CreateFormModel createType='plus' />}
 						</div>
 					</div>
 				</div>
 				{/* LIST*/}
 				<Table columns={columns} data={parentsData} />
+
 				<table className='w-full mt-4'>
 					<tbody>
 						{listItem.map((item, index) => (

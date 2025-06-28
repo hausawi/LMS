@@ -1,19 +1,19 @@
 import { Link } from 'react-router-dom';
-import TableSearch from '../../components/TableSearch';
+import TableSearch from '../../components/dashboard/TableSearch';
 import { assets } from '../../assets/assets';
-import Pagination from '../../components/Pagination';
-import Table from '../../components/Table';
+import Pagination from '../../components/dashboard/Pagination';
+import Table from '../../components/dashboard/Table';
 import { role, subjectsData } from '../../lib/data';
 
 import React, { useContext, useEffect, useState } from 'react';
 import { ListContext } from '../../ListContext';
-import CreateFormModel from '../../components/CreateFormModel';
-import DeleteFormModel from '../../components/DeleteFormModel';
-import UpdateFormModel from '../../components/UpdateFormModel';
+import CreateFormModel from '../../components/dashboard/CreateFormModel';
+import DeleteFormModel from '../../components/dashboard/DeleteFormModel';
+import UpdateFormModel from '../../components/dashboard/UpdateFormModel';
 
 export const columns = [
 	{
-		header: 'Subject Name',
+		header: 'Course Name',
 		accessor: 'name',
 		className: 'text-left md:table-cell ',
 	},
@@ -29,7 +29,7 @@ export const columns = [
 	},
 ];
 
-const SubjectsList = () => {
+const CoursesList = () => {
 	const { subjectsData } = useContext(ListContext);
 	const [listItem, setListItem] = useState([]);
 	useEffect(() => {
@@ -42,7 +42,7 @@ const SubjectsList = () => {
 				{/* TOP */}
 				<div className='flex items-center justify-between'>
 					<h1 className='hidden md:block text-lg font-semibold'>
-						All Subjects
+						All Courses
 					</h1>
 					<div className='flex flex-col md:flex-row items-center gap-4 w-full md:w-auto '>
 						<TableSearch />
@@ -95,4 +95,4 @@ const SubjectsList = () => {
 	);
 };
 
-export default SubjectsList;
+export default CoursesList;

@@ -1,9 +1,9 @@
 import React from 'react';
 import { assets } from '../../../assets/assets';
-import BigCalendar from '../../../components/BigCalendar';
-import Announcements from '../../../components/Announcements';
+import BigCalendar from '../../../components/dashboard/BigCalendar';
+import Announcements from '../../../components/dashboard/Announcements';
 import { Link } from 'react-router-dom';
-import Performance from '../../../components/Performance';
+import Performance from '../../../components/dashboard/Performance';
 
 const StudentSinglePage = () => {
 	return (
@@ -107,7 +107,7 @@ const StudentSinglePage = () => {
 					</div>
 				</div>
 				{/* BOTTOM */}
-				<div className='mt-4 bg-white rounded-md p-4 h-[800px]'>
+				<div className='mt-4 bg-white rounded-md p-4 h-[600px]'>
 					<h1 className=''>Teacher&apos;s Schedule</h1>
 					<BigCalendar />
 				</div>
@@ -116,7 +116,7 @@ const StudentSinglePage = () => {
 			<div className='w-full xl:w-1/3 flex flex-col gap-4'>
 				<div className='bg-white p-4 rounded-md'>
 					<h1 className='text-xl font-semibold'>ShortCuts</h1>
-					<div className='mt-4 flex gap-2 flex-wrap text-xs text-gray-500'>
+					<div className='mt-4 flex gap-1 flex-wrap text-xs text-gray-500'>
 						<Link className='p-3 rounded-md bg-hmoGreen' href='/'>
 							Student&apos;s Lessons
 						</Link>
@@ -131,6 +131,9 @@ const StudentSinglePage = () => {
 						</Link>
 						<Link className='p-3 rounded-md bg-yellow-200' href='/'>
 							Student&apos;s Assignments
+						</Link>
+						<Link className='p-3 rounded-md bg-hmoPurple' href='/'>
+							Student&apos;s Dashboard
 						</Link>
 					</div>
 				</div>

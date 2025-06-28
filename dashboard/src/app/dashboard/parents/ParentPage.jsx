@@ -1,7 +1,7 @@
 
-import Announcements from '../../../components/Announcements';
-import Events from '../../../components/Events';
-import BigCalendar from '../../../components/BigCalendar';
+import Announcements from '../../../components/dashboard/Announcements';
+import Events from '../../../components/dashboard/Events';
+import BigCalendar from '../../../components/dashboard/BigCalendar';
 
 const ParentPage = () => {
 	return (

@@ -14,6 +14,7 @@ import mail from './mail.png';
 import phone from './phone.png';
 import blood from './blood.png';
 import close from './close.png';
+import profile from './profile.png';
 
 
 export const assets = {
@@ -33,5 +34,6 @@ export const assets = {
 	phone,
 	blood,
 	close,
+	profile,
 	
 };

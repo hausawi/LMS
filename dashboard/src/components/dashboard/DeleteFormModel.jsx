@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react';
-import { ListContext } from '../ListContext';
-import { assets } from '../assets/assets';
+import { ListContext } from '../../ListContext';
+import { assets } from '../../assets/assets';
 
 const DeleteFormModel = () => {
 	const { deleteType } = useContext(ListContext);

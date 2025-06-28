@@ -1,6 +1,6 @@
-import { assets } from '../assets/assets';
+import { assets } from '../../assets/assets';
 
-const Navbar = () => {
+const NavBar = () => {
 	return (
 		<div className='flex items-center justify-between p-4'>
 			{/* SEARCH BAR */}
@@ -36,4 +36,4 @@ const Navbar = () => {
 	);
 };
 
-export default Navbar;
+export default NavBar;

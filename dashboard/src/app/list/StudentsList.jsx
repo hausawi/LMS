@@ -1,14 +1,14 @@
-import { Link } from 'react-router-dom';
-import TableSearch from '../../components/TableSearch';
+import { Link, Outlet } from 'react-router-dom';
+import TableSearch from '../../components/dashboard/TableSearch';
 import { assets } from '../../assets/assets';
-import Pagination from '../../components/Pagination';
-import Table from '../../components/Table';
+import Pagination from '../../components/dashboard/Pagination';
+import Table from '../../components/dashboard/Table';
 import { role, studentsData } from '../../lib/data';
 
 import React, { useContext, useEffect, useState } from 'react';
 import { ListContext } from '../../ListContext';
-import DeleteFormModel from '../../components/DeleteFormModel';
-import CreateFormModel from '../../components/CreateFormModel';
+import DeleteFormModel from '../../components/dashboard/DeleteFormModel';
+import CreateFormModel from '../../components/dashboard/CreateFormModel';
 
 export const columns = [
 	{

@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom';
-import TableSearch from '../../components/TableSearch';
+import TableSearch from '../../components/dashboard/TableSearch';
 import { assets } from '../../assets/assets';
-import Pagination from '../../components/Pagination';
-import Table from '../../components/Table';
+import Pagination from '../../components/dashboard/Pagination';
+import Table from '../../components/dashboard/Table';
 import { role, resultsData } from '../../lib/data';
 
 import React, { useContext, useEffect, useState } from 'react';
 import { ListContext } from '../../ListContext';
-import UpdateFormModel from '../../components/UpdateFormModel';
-import DeleteFormModel from '../../components/DeleteFormModel';
-import CreateFormModel from '../../components/CreateFormModel';
+import UpdateFormModel from '../../components/dashboard/UpdateFormModel';
+import DeleteFormModel from '../../components/dashboard/DeleteFormModel';
+import CreateFormModel from '../../components/dashboard/CreateFormModel';
 
 export const columns = [
 	{
@@ -60,7 +60,6 @@ const ResultsList = () => {
 	const [listItem, setListItem] = useState([]);
 	useEffect(() => {
 		setListItem(resultsData.slice());
-		console.log(resultsData);
 	}, []);
 	return (
 		<>
@@ -88,7 +87,7 @@ const ResultsList = () => {
 						{listItem.map((item, index) => (
 							<tr
 								key={index}
-								className='border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-hmoLightPurple'>
+								className='border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-hmoLightBlue'>
 								<td className='flex items-center gap-4 p-4'>{item.subject}</td>
 								<td className='hidden md:table-cell'>{item.student}</td>
 

@@ -10,7 +10,7 @@ import {
 	Legend,
 	ResponsiveContainer,
 } from 'recharts';
-import { assets } from '../assets/assets';
+import { assets } from '../../assets/assets';
 
 const data = [
 	{
