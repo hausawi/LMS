@@ -1,8 +1,11 @@
 import React from 'react'
+import Hero from '../../components/students/Hero'
 
 const Home = () => {
   return (
-    <div>Home Page</div>
+    <div className='flex flex-colitems-center space-y-7 '>
+      <Hero/>
+    </div>
   )
 }
 

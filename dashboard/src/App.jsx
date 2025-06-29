@@ -30,6 +30,7 @@ import EducatorDashboard from './app/dashboard/teachers/EducatorDashboard';
 import AttendanceList from './app/list/AttendanceList';
 import ParentDashboard from './app/dashboard/parents/ParentDashboard';
 import ClassesList from './app/list/ClassesList';
+import RegisterationPage from './app/registeration/RegisterationPage';
 
 function App() {
 	const isEducatorRoute = useMatch('/educator-dashboard/*');
@@ -41,6 +42,7 @@ function App() {
 
 			<Routes>
 				<Route path='/' element={<Home />} />
+				<Route path='/register' element={<RegisterationPage />} />
 				<Route path='/course-list' element={<CoursesList />} />
 				<Route path='/course-list/:input' element={<CoursesList />} />
 				<Route path='/course/:id' element={<CourseDetails />} />
