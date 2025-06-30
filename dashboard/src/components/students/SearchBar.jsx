@@ -14,7 +14,7 @@ const SearchBar = ({data}) => {
 		<form
 			onSubmit={onSearchHandler}
 			className='max-w-xl w-full md:h-14 h-12 flex -items-center bg-white border border-gray-500/20 rounded'>
-			<img src={assets.search} alt='' className='md:w-auto h-10 w-10 px-3' />
+			<img src={assets.search} width={10} height={10} alt='' className='md:w-auto  w-10 p-3' />
 			<input
 				onChange={(e) => setInput(e.target.value)}
 				value={input}
