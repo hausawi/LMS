@@ -9,7 +9,7 @@
 	--color-hmoLightGreen: #2ecbe9;
 
 	
-		fontsize: {
+		/* fontsize: {
 			'course-details-heading-small':['26px','36px'],
       'course-details-heading-large': [
 					'36px',
@@ -20,7 +20,7 @@
 		},
 		gridTemplateColumns:{
 			"auto":"reapat(auto-fit, minmax(200px, 1fr))"
-		}
+		} */
 	
 }
 
