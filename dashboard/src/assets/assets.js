@@ -15,6 +15,9 @@ import phone from './phone.png';
 import blood from './blood.png';
 import close from './close.png';
 import profile from './profile.png';
+import star from './star.png';
+import blankStar from './blank-star.jpg';
+import profile_img_1 from './profile_img_1.jpg';
 
 export const assets = {
 	search,
@@ -34,6 +37,9 @@ export const assets = {
 	blood,
 	close,
 	profile,
+	profile_img_1,
+	star,
+	blankStar,
 };
 
 export const dummyCourses = [
@@ -73,11 +79,11 @@ export const dummyCourses = [
 		educator: '23543467876',
 		enrolledStudents: ['user_12345671', 'user_12345672', 'user_12345673'],
 		courseRatings: [
-			{
-				userId: 'user_12345673',
-				rating: 5,
-				_id: '1a',
-			},
+			// {
+			// 	userId: 'user_12345673',
+			// 	rating: 0,
+			// 	_id: '1a',
+			// },
 		],
 		createdAt: '2024-12-17T08:16:53.622Z',
 		updatedAt: '2025-01-02T04:47:44.701Z',
@@ -122,7 +128,7 @@ export const dummyCourses = [
 		courseRatings: [
 			{
 				userId: 'user_12345673',
-				rating: 5,
+				rating: 2,
 				_id: '1a',
 			},
 		],
@@ -169,7 +175,7 @@ export const dummyCourses = [
 		courseRatings: [
 			{
 				userId: 'user_12345673',
-				rating: 5,
+				rating: 3,
 				_id: '1a',
 			},
 		],
@@ -216,7 +222,7 @@ export const dummyCourses = [
 		courseRatings: [
 			{
 				userId: 'user_12345673',
-				rating: 5,
+				rating: 4,
 				_id: '1a',
 			},
 		],
@@ -224,5 +230,32 @@ export const dummyCourses = [
 		updatedAt: '2025-01-02T04:47:44.701Z',
 		__v: 4,
 		courseThumbnail: 'https://ik.imagekit.io/r6yaoh57f/tailwind-css.jpg',
+	},
+];
+
+export const dummyTestimonial = [
+	{
+		name: 'David Jack',
+		role: 'SWE 1 @ Amazon',
+		image: assets.profile_img_1,
+		rating: 3,
+		feedback:
+			"I've been using Imagify nearly two years, primarily for Instagram, and it has been incredibly user-freindly, making my work much easier.",
+	},
+	{
+		name: 'Hmo hausawi',
+		role: 'SEO 1 @ SudaStack',
+		image: assets.profile_img_1,
+		rating: 5,
+		feedback:
+			"I've been using Imagify nearly two years, primarily for Instagram, and it has been incredibly user-freindly, making my work much easier.",
+	},
+	{
+		name: 'John Due',
+		role: 'SWE 1 @ ComptiA',
+		image: assets.profile_img_1,
+		rating: 4,
+		feedback:
+			"I've been using Imagify nearly two years, primarily for Instagram, and it has been incredibly user-freindly, making my work much easier.",
 	},
 ];
