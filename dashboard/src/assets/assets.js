@@ -45,7 +45,7 @@ export const assets = {
 export const dummyCourses = [
 	{
 		_id: '128543',
-		courseTitle: 'Intruduction to JavaScript',
+		courseTitle: 'Intruduction to HTML & CSS',
 		courseDescription:
 			'<h2>Learn the Basic of JavaScript</h2><p>JavaScript is a versatile programming langauge that ...</p><p>this course is perfect for beginners....</p><ul><li>Understand the basic</li><li>Learn how to manipulate the DOM</li><li>Create dynamic web applications</li></ul>',
 		coursePrice: 49.99,
@@ -139,7 +139,7 @@ export const dummyCourses = [
 	},
 	{
 		_id: '128543ghj',
-		courseTitle: 'Intruduction to JavaScript',
+		courseTitle: 'Intruduction to ReactJs',
 		courseDescription:
 			'<h2>Learn the Basic of JavaScript</h2><p>JavaScript is a versatile programming langauge that ...</p><p>this course is perfect for beginners....</p><ul><li>Understand the basic</li><li>Learn how to manipulate the DOM</li><li>Create dynamic web applications</li></ul>',
 		coursePrice: 49.99,
@@ -186,7 +186,7 @@ export const dummyCourses = [
 	},
 	{
 		_id: '128543as',
-		courseTitle: 'Intruduction to JavaScript',
+		courseTitle: 'Intruduction to Tailwindcsst',
 		courseDescription:
 			'<h2>Learn the Basic of JavaScript</h2><p>JavaScript is a versatile programming langauge that ...</p><p>this course is perfect for beginners....</p><ul><li>Understand the basic</li><li>Learn how to manipulate the DOM</li><li>Create dynamic web applications</li></ul>',
 		coursePrice: 49.99,
